@@ -14,6 +14,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("testnig", "onStart event fired");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("testing", "onResume event fired");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("testing", "onPause event fired");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("testing", "onRestart event fired");
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.e("testing", "We're going down Captain!");
